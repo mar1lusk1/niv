@@ -18,24 +18,26 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  * 
  * ---------------------------------------------------------
- * 
- * This is the main file of the Niv game engine. 
  */
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-
-#include "incl/windowing.h"
-#include "defs.h"
-
+#include "logger.h"
+#include "../defs.h"
 #include <SDL3/SDL.h>
+#include <stdbool.h>
 
-static struct Application app;
+#ifndef NIV_WINDOWING
+#define NIV_WINDOWING
 
-int main (void)
-  {
-    Application__new (&app, "Niv");
-    niv_init_window (&app);
-    return 0;
-  }
+    /// Initializes the window.
+    /// You shouldn't be using this, it should be used by the engine.
+    bool niv_init_window (struct Application * app);
+
+    /// Updates the window state.
+    /// Make sure to call this every frame!.
+    void Update_Window (struct Application * app);
+
+    /// Closes the window
+    /// You shouldn't be using this, it should be used by the engine.
+    void niv_close_window (struct Application * app);
+
+#endif
