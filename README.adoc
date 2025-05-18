@@ -1,0 +1,81 @@
+= Niv
+:doctype: article
+:description: Niv is a dead simple (and lightweight) game engine for C.
+:license-type: GPL-3.0
+:author: Mario Rosell
+:email: mar1lusk1@proton.me
+:revnumber: v0.1
+:revdate: 2025-05-17
+:repository-url: https://github.com/mar1lusk1/niv
+:documentation-url: https://github.com/mar1lusk1/niv/wiki
+:source-highlighter: rouge
+:rouge-style: github
+:!showtitle:
+:icons: font
+:toc: preamble
+:imagesdir: assets/images
+:hardbreaks-option:
+
+
+// GitHub doesn't render asciidoc exactly as intended, so we adjust settings and utilize some html
+ifdef::env-github[]
+
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+
+
+++++
+
+<p align="center">
+  
+  <a href="https://github.com/mar1lusk1/niv">
+    
+    <img src="assets/images/logo.png" alt="Niv Logo" width="30%" height="30%"></a>
+  
+  <!-- REPLACE THE FOLLOWING WITH YOUR REPOSITORY/PROJECT TITLE -->
+  <h3 align="center">Niv</h3>
+  
+  <p align="center">
+    A dead simple (and lightweight game engine for c)
+  
+    <br>
+    
+    <a href="https://github.com/mar1lusk1/niv/wiki"><strong>Explore the docs »</strong></a>
+    
+  </p>
+</p>
+
+++++
+
+endif::[]
+
+ifndef::env-github[]
+image::logo.png[Logo, align=center, width=30%]
+[.text-center]
+[.lead]
+*{doctitle}*
+
+[.text-center]
+_{description}_ +
+{documentation-url}[Explore the docs »]
+endif::[]
+
+WARNING: This is a WIP. Including the readme...
+
+== About
+
+Niv is a free & open-source game engine made to be _**lightweight but powerful**_, _**professional but simple**_, and *portable*.
+
+== Installation
+
+=== Requirements
+
+- A C compiler (`clang` is recommended)
+- The https://cmake.org/[cmake] build system
+
+=== On Windows
+
+
